@@ -60,7 +60,9 @@ void Dfo_game::setup() {
     
     //---------------------------
     
-    // generate the swarm
+    // generate the swarm so that it starts off only on the positive hyperoctant of our search space
+    /* Note --  In geometry, an orthant or hyperoctant is the analogue in n-dimensional Euclidean space of a quadrant in the plane or an octant in three dimensions.
+     */
     dfo->generateSwarmPositiveAxis();
     
 

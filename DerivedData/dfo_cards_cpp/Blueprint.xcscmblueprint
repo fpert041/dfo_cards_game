@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1DE9D0EA0DB7A64AC549D101E635263936D9B1EA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1DE9D0EA0DB7A64AC549D101E635263936D9B1EA" : 0,
+    "30A48778118A7D3C24190461B101797C7B2EA97A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EE66575D-A655-4FDD-873A-9559A7923CC0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1DE9D0EA0DB7A64AC549D101E635263936D9B1EA" : "dfo_cards_cpp\/",
+    "30A48778118A7D3C24190461B101797C7B2EA97A" : "dfo_cards_cpp\/DFO\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "dfo_cards_cpp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "dfo_cards_cpp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fpert041\/dfo_cards_game",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DE9D0EA0DB7A64AC549D101E635263936D9B1EA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fpert041\/bare_dfo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30A48778118A7D3C24190461B101797C7B2EA97A"
+    }
+  ]
+}

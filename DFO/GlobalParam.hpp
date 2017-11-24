@@ -67,9 +67,6 @@ public:
     void setDt(double inDt);
         // disturbance threshold
     
-    void setSearchSpaceWidth(int width);
-        // the size (range) of each dimension (can have a range of +/-)
-    
     void setDim(int dims);
         // dim: the dimensions of the problem
     
@@ -79,8 +76,13 @@ public:
     void setDemocracy(bool dem);
         // keep leader (best fly) in the equation or not
     
+    void setSearchSpaceWidth(int width);
+    // the size (range) of each dimension (can have a range of +/-)
+
+    void setSearchSpaceWidth(int dim, int width);
+        // set the size (range) of a specific dimension (can have a range of +/-)
+    
     // -- getters --
-    // ----- getters ----
     
     bool getDemocracy();
     
@@ -91,6 +93,10 @@ public:
     std::string getEvalFuncName();
     
     int getEvalCount();
+    
+    int getPopSize();
+    
+    int getDim();
     
 };
 

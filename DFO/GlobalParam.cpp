@@ -40,6 +40,10 @@ void GlobalParam::setSearchSpaceWidth(int width){
     searchSpaceWidth = std::vector<int>(dim, width); // the size (range) of each dimension (can have a range of +/-)
 }
 
+void GlobalParam::setSearchSpaceWidth(int dim, int width){
+    searchSpaceWidth[dim] = width; // the size (range) of each dimension (can have a range of +/-)
+}
+
 void GlobalParam::setDim(int dims){
     // dim: the dimensions of the problem
     dim = dims;
@@ -80,6 +84,14 @@ std::string GlobalParam::getEvalFuncName(){
 
 int GlobalParam::getEvalCount(){
     return evalCount;
+}
+
+int GlobalParam::getPopSize(){
+    return popSize;
+}
+
+int GlobalParam::getDim() {
+    return dim;
 }
 
 
