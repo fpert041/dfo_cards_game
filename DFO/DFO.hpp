@@ -27,8 +27,8 @@ public:
     // generate DFO swarm (cycle 0 of the algorithm)
     void const generateSwarm();
     
-    // generate DFO swarm (cycle 0 of the algorithm) using binary classes for the pos of each dimensions
-    void const generateSwarmBin();
+    // generate DFO swarm (cycle 0 of the algorithm) using only the positive axis of each dimensions
+    void const generateSwarmPositiveAxis();
     
     // DFO implementation part: evaluate flies, make them interact & update the swarm
     void const updateSwarm();

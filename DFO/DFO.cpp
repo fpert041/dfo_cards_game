@@ -52,7 +52,7 @@ void const DFO::generateSwarm(){
 
 }
 
-void const DFO::generateSwarmBin(){
+void const DFO::generateSwarmPositiveAxis(){
     
     // Set up global parameters for the problem space -> this works well for visualising the problem
     // But I wonder how it would work on other search-spaces //************INVESTIGATE W/ MOHAMMAD IF POSSIBLE ****//<<<
@@ -61,7 +61,7 @@ void const DFO::generateSwarmBin(){
     int size = popSize;
     swarm.clear();
     for (int i = 0; i < size; i++){
-        swarm.push_back(shared_ptr<Fly>(new Fly(genRandPosBin(), this)));
+        swarm.push_back(shared_ptr<Fly>(new Fly(genRandPosPositive(), this)));
     }
     
     findBestFly();
