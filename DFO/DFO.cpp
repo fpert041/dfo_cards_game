@@ -28,6 +28,13 @@ DFO::DFO(std::function<double(std::vector<double>)> fitnessFunc) : Utilis(fitnes
 
 DFO::~DFO(){}
 
+// ---- setters and getters -----
+
+// keep fly's coordinates within the given search space width
+void const DFO::setConstrainPos(bool status){
+    constrainPositions = status;
+}
+
 //--------------------------------------------------------------------------------
 /*********************************************************************************
  *
@@ -165,8 +172,10 @@ void const DFO::updateSwarm(){
             }
             
             // <<<<<<<<<<<<<<<<<   constrain dimensions to fit the range specified
-            //if ( temp[d] > searchSpaceWidth[d] ) temp[d] =  searchSpaceWidth[d];
-            //if (temp[d] < 0) temp[d] =  0;
+            if (constrainPositions) {
+                if ( temp[d] > searchSpaceWidth[d] ) temp[d] =  searchSpaceWidth[d];
+                if (temp[d] < 0) temp[d] =  0;
+            }
             
             //cout << "Disturbances in Fly  #" + to_sring(i) + ": \t" + to_sring(dCounter) << endl;
         }

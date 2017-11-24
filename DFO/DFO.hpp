@@ -14,6 +14,9 @@
 using namespace std;
 
 class DFO : public Utilis {
+protected:
+    
+    bool constrainPositions = false;
 
 public:
     // default constructor
@@ -32,6 +35,9 @@ public:
     
     // DFO implementation part: evaluate flies, make them interact & update the swarm
     void const updateSwarm();
+    
+    // keep fly's coordinates within the given search space width
+    void const setConstrainPos(bool status);
     
     // ----- singleton needed stuff ---- This class can be implemented only ONCE
     
